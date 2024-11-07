@@ -11,6 +11,7 @@ class MyHttpOverrides extends HttpOverrides{
       ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
   }
 }
+//lol tested
 void main() {
   HttpOverrides.global = new MyHttpOverrides();
   runApp(const MyApp());
