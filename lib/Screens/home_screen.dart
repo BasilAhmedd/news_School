@@ -21,7 +21,8 @@ class HomeScreen extends StatelessWidget {
           if (data == null) {
             value.fetchNewsData();
             return Center(child: CircularProgressIndicator());
-          } else {
+          }
+          else {
             return ListView.builder(
               itemCount: data.length,
               itemBuilder: (context, index) {

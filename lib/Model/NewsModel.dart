@@ -1,6 +1,6 @@
 class NewsModel {
   NewsModel({
-      this.articles,});
+    this.articles,});
 
   NewsModel.fromJson(dynamic json) {
     if (json['articles'] != null) {
@@ -23,9 +23,9 @@ class NewsModel {
 }
 class Articles {
   Articles({
-      this.title, 
-      this.description, 
-      this.urlToImage,});
+    this.title,
+    this.description,
+    this.urlToImage,});
 
   Articles.fromJson(dynamic json) {
     title = json['title'];
